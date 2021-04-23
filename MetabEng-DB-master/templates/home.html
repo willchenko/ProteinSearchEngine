@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block mainBody %}
+
+<!-- Search bar for enzyme class-->
+<div class="pt-2">
+    <div class="mx-auto">
+      <div class="input-group pl-2">
+        <input type="text" class="form-control" placeholder="Enter an enzyme class..." method="POST">         
+          <span class="input-group-btn pr-2">
+            <button class="btn btn-success" type="submit">
+              <span></span>Search
+            </button>
+          </span>
+      </div>
+    </div>
+</div>
+
+<!-- Table for displaying data-->
+<div class="pt-2">
+    {{table|safe}}
+</div>
+{% endblock %}
+
